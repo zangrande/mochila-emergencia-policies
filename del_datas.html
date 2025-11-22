@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusão de Dados - Mochila de Emergência</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #1e3c72;
+            font-size: 22px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        .steps {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+        
+        .step {
+            display: flex;
+            align-items: start;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+        }
+        
+        .step:last-child {
+            margin-bottom: 0;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-right: 15px;
+        }
+        
+        .step-text {
+            flex: 1;
+            padding-top: 4px;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        .warning strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .info-box {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        .data-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .data-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .data-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .contact {
+            margin-top: 15px;
+        }
+        
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎒 Mochila de Emergência</h1>
+            <p>Como Excluir Seus Dados</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Exclusão de Dados pelo Aplicativo</h2>
+                <p>Você pode excluir todos os seus dados diretamente pelo aplicativo Mochila de Emergência. Siga os passos abaixo:</p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Abra o aplicativo <strong>Mochila de Emergência</strong> no seu dispositivo</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Toque no ícone <strong>Configurações</strong> (⚙️) no menu inferior</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Role a página até encontrar a seção <strong>"Zona de Perigo"</strong></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Toque no botão vermelho <strong>"Excluir minha conta"</strong></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-text">Leia o aviso e confirme a exclusão tocando em <strong>"Excluir TUDO"</strong></div>
+                    </div>
+                </div>
+                
+                <div class="warning">
+                    <strong>⚠️ Atenção:</strong>
+                    Esta ação é irreversível. Todos os seus dados serão permanentemente excluídos e não poderão ser recuperados.
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Dados que Serão Excluídos</h2>
+                <p>Ao confirmar a exclusão, os seguintes dados serão permanentemente removidos:</p>
+                <ul class="data-list">
+                    <li>Todos os itens cadastrados na sua mochila</li>
+                    <li>Todas as fotos dos itens</li>
+                    <li>Todos os documentos enviados</li>
+                    <li>Suas configurações personalizadas</li>
+                    <li>Histórico de alterações</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>O que Acontece Após a Exclusão?</h2>
+                <div class="info-box">
+                    <p>Após confirmar a exclusão:</p>
+                    <ul class="data-list">
+                        <li>Você será automaticamente desconectado do aplicativo</li>
+                        <li>Todos os seus dados serão removidos imediatamente</li>
+                        <li>Sua conta de login permanecerá ativa, mas vazia</li>
+                        <li>Você poderá fazer login novamente e começar do zero, se desejar</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Precisa de Ajuda?</h2>
+                <p>Se você encontrar dificuldades para excluir seus dados ou tiver alguma dúvida, entre em contato conosco:</p>
+                <div class="contact">
+                    <p>📧 E-mail: <a href="mailto:devzangrande@gmail.com">devzangrande@gmail.com</a></p>
+                    <p style="margin-top: 10px; color: #666; font-size: 13px;">Responderemos em até 48 horas úteis.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Mochila de Emergência. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
